@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GrStatusGood } from "react-icons/gr";
+import { BsSendCheck } from "react-icons/Bs";
 import { BiErrorCircle } from "react-icons/bi";
 
 export const FormContainer = styled.main`
@@ -107,7 +107,7 @@ export const SendError = styled.div`
   gap: 0.5rem;
 `;
 
-export const SuccessIcon = styled(GrStatusGood)`
+export const SuccessIcon = styled(BsSendCheck)`
   color: #24af6b;
   font-size: 1.5rem;
 `;
