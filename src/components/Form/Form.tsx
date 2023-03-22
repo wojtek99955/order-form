@@ -38,7 +38,10 @@ const Form = () => {
     usePost();
 
   const onSubmit = (data: FormValues) => {
-    sendData("https://httpbin.org/post", data);
+    sendData(
+      "https://umzzcc503l.execute-api.us-west-2.amazonaws.com/dishes/",
+      data
+    );
     console.log(data);
   };
 
