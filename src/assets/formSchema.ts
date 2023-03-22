@@ -13,7 +13,13 @@ export const schema = yup
         "only Latin letters allowed"
       )
       .required("required"),
-    preparation_time: yup.string().required("required"),
+    preparation_time: yup
+      .string()
+      .required("required")
+      .transform((value, originalValue) => {
+        return originalValue === "" ? undefined : value;
+      })
+      .matches(/^\d+:\d{2}:\d{2}$/, "invalid time format"),
     type: yup.string().required("required"),
     diameter: yup
       .number()
