@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BsSendCheck } from "react-icons/Bs";
+import { BsSendCheck } from "react-icons/bs";
 import { BiErrorCircle } from "react-icons/bi";
 
 export const FormContainer = styled.main`
