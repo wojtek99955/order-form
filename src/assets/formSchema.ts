@@ -51,6 +51,7 @@ export const schema = yup
       .transform((value, originalValue) => {
         return originalValue === "" ? undefined : value;
       })
+      .min(1, "1 is a minimum value")
       .typeError("only numbers")
       .when("type", {
         is: "sandwitch",
