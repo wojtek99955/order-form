@@ -2,7 +2,7 @@
 
 ## Live
 
-https://wojtekk-order-form.netlify.app/
+https://wojtekk-order-form.vercel.app/
 
 ## Technologies
 
