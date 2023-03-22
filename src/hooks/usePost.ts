@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FormValues } from "../types/FormValues";
 
-export const useFetch = () => {
+export const usePost = () => {
   const [sendMessage, setSendMessage] = useState("");
   const [isSendError, setIsSendError] = useState<boolean>(false);
   const [isSendSuccess, seIsSendSuccess] = useState<null | boolean>(null);

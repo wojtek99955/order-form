@@ -15,7 +15,7 @@ import {
 import { schema } from "../../assets/formSchema";
 import ConditionField from "./ConditionField";
 import { FormValues } from "../../types/FormValues";
-import { useFetch } from "../../hooks/useFetch";
+import { usePost } from "../../hooks/usePost";
 import Loader from "../../assets/Loader";
 import { registerTypeInputs } from "../../helpers/registerTypeInputs";
 
@@ -35,10 +35,10 @@ const Form = () => {
   registerTypeInputs(watchType, register, unregister);
 
   const { sendData, isSendError, isLoading, isSendSuccess, sendMessage } =
-    useFetch();
+    usePost();
 
   const onSubmit = (data: FormValues) => {
-    sendData("https://httpbijn.org/post", data);
+    sendData("https://httpbin.org/post", data);
     console.log(data);
   };
 
